@@ -15,9 +15,11 @@ $bg-testimonials: hsl(219, 30%, 18%);
 
 $font-color: white;
 
-$accent-cta-active: hsl(176, 68%, 64%);
-$accent-cta-default: hsl(198, 60%, 50%);
+$accent-cta: linear-gradient(90deg, rgba(101,226,217,1) 0%, rgba(51,158,204,1) 100%);
 $accent-error: hsl(0, 100%, 63%);
+
+$font-weight-lg: 700;
+$font-weight-sm: 400;
 
 *{
     font-size: 14px;
@@ -39,6 +41,7 @@ nav{
     align-items: center;
     color: $font-color;
     font-family: $font-stack-primary;
+    padding-bottom: 2.5em;
 
     a{
         font-size: .9rem;
@@ -47,6 +50,38 @@ nav{
     }
     
 }
+
+.hero{
+    text-align: center;
+
+   
+
+    
+}
+
+h1{
+    font-size: 1.7rem;
+    font-weight:$font-weight-lg;
+}
+
+.cta-start{
+    padding: 1em 6em;
+    border-radius: $accent-cta;
+    font-family: $font-stack-secondary;
+    background: $accent-cta;
+    color: $font-color;
+    margin: 2em;
+    border-radius: 30px;
+}
+
+.feature{
+    text-align: center;
+
+    img{
+        width: 20%;
+    }
+}
+
 
 
 

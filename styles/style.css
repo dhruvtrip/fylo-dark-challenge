@@ -31,12 +31,41 @@ nav {
           align-items: center;
   color: white;
   font-family: Raleway;
+  padding-bottom: 2.5em;
 }
 
 nav a {
   font-size: .9rem;
   color: white;
   text-decoration: none;
+}
+
+.hero {
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+.cta-start {
+  padding: 1em 6em;
+  border-radius: linear-gradient(90deg, #65e2d9 0%, #339ecc 100%);
+  font-family: Open Sans;
+  background: -webkit-gradient(linear, left top, right top, from(#65e2d9), to(#339ecc));
+  background: linear-gradient(90deg, #65e2d9 0%, #339ecc 100%);
+  color: white;
+  margin: 2em;
+  border-radius: 30px;
+}
+
+.feature {
+  text-align: center;
+}
+
+.feature img {
+  width: 20%;
 }
 
 .illustration-big {
