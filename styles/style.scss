@@ -1,0 +1,42 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+//Google fonts
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
+
+//Variables - library
+$font-stack-primary: Raleway;
+$font-stack-secondary: Open Sans;
+
+$bg-email: hsl(217, 28%, 15%);
+$bg-main: hsl(218, 28%, 13%);
+$bg-footer: hsl(216, 53%, 9%);
+$bg-testimonials: hsl(219, 30%, 18%);
+
+$font-color: white;
+
+$accent-cta-active: hsl(176, 68%, 64%);
+$accent-cta-default: hsl(198, 60%, 50%);
+$accent-error: hsl(0, 100%, 63%);
+
+
+
+// Styling elements
+
+body{
+    background-color: $bg-main;
+    font-family: $font-stack-secondary;
+    color: $font-color;
+}
+nav{
+    color: $font-color;
+    font-family: $font-stack-primary;
+}
+
+footer{
+    background-color: $bg-footer;
+}
+
+@media screen (min-width:375px) {
+    
+}
