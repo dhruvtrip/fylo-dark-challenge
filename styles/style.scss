@@ -19,24 +19,51 @@ $accent-cta-active: hsl(176, 68%, 64%);
 $accent-cta-default: hsl(198, 60%, 50%);
 $accent-error: hsl(0, 100%, 63%);
 
+*{
+    font-size: 14px;
+}
 
 
-// Styling elements
+// Mobile first
 
 body{
     background-color: $bg-main;
     font-family: $font-stack-secondary;
     color: $font-color;
+    margin: 2em;
 }
+
 nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     color: $font-color;
     font-family: $font-stack-primary;
+
+    a{
+        font-size: .9rem;
+        color: $font-color;
+        text-decoration: none;
+    }
+    
+}
+
+
+
+
+.illustration-big{
+    width: 100%;
+}
+
+.logo{
+    width: 25%;
 }
 
 footer{
     background-color: $bg-footer;
 }
 
-@media screen (min-width:375px) {
+// desktop
+@media only screen and (min-width: 768px) {
     
 }

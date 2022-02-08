@@ -8,15 +8,43 @@
   color: #3e52a3;
 }
 
+* {
+  font-size: 14px;
+}
+
 body {
   background-color: #181f2a;
   font-family: Open Sans;
   color: white;
+  margin: 2em;
 }
 
 nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: white;
   font-family: Raleway;
+}
+
+nav a {
+  font-size: .9rem;
+  color: white;
+  text-decoration: none;
+}
+
+.illustration-big {
+  width: 100%;
+}
+
+.logo {
+  width: 25%;
 }
 
 footer {
