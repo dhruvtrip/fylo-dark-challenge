@@ -49,6 +49,14 @@ h1 {
   font-weight: 700;
 }
 
+h2 {
+  font-size: 1.3rem;
+}
+
+h1, h2, h3 {
+  font-family: Raleway;
+}
+
 .cta-start {
   padding: 1em 6em;
   border-radius: linear-gradient(90deg, #65e2d9 0%, #339ecc 100%);
@@ -61,15 +69,49 @@ h1 {
 }
 
 .feature {
+  margin: 6em 0;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.feature .feature-container {
+  padding: 2em 0em;
+}
+
+.feature .feature-container h3 {
+  font-size: 1.2rem;
 }
 
 .feature img {
   width: 20%;
 }
 
+.slogan {
+  margin: 7em 0em 10em;
+}
+
+.slogan a:link {
+  color: linear-gradient(90deg, #65e2d9 0%, #339ecc 100%);
+}
+
+.testimonials-container {
+  background-color: #202a3c;
+  z-index: 9999;
+  font-size: .5rem;
+}
+
+.testimonials-container .circular-square {
+  border-radius: 50%;
+}
+
 .illustration-big {
-  width: 100%;
+  width: 90%;
 }
 
 .logo {
@@ -78,5 +120,20 @@ h1 {
 
 footer {
   background-color: #0b1523;
+}
+
+footer .logo {
+  width: 50%;
+}
+
+footer .footer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 /*# sourceMappingURL=style.css.map */

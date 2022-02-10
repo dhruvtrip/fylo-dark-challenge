@@ -64,6 +64,15 @@ h1{
     font-weight:$font-weight-lg;
 }
 
+h2{
+    font-size: 1.3rem;
+}
+
+
+h1,h2,h3{
+    font-family: $font-stack-primary;
+}
+
 .cta-start{
     padding: 1em 6em;
     border-radius: $accent-cta;
@@ -74,20 +83,43 @@ h1{
     border-radius: 30px;
 }
 
+//features category
 .feature{
+    margin: 6em 0;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 
+    .feature-container{
+        padding: 2em 0em;
+        h3{
+            font-size: 1.2rem;
+        }
+    }
     img{
         width: 20%;
     }
 }
 
 
+//slogans
+.slogan{
+    margin:7em 0em 10em;
+    a:link{
+        color: $accent-cta;
+    }
+}
 
+.testimonials-container{
+    background-color: $bg-testimonials;
+    z-index: 9999;
+    font-size: .5rem;
+    .circular-square { border-radius: 50%; }
 
+}
 
 .illustration-big{
-    width: 100%;
+    width: 90%;
 }
 
 .logo{
@@ -96,6 +128,14 @@ h1{
 
 footer{
     background-color: $bg-footer;
+    .logo{
+        width: 50%;
+    }
+    .footer-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 }
 
 // desktop
