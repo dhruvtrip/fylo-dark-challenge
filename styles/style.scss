@@ -23,16 +23,75 @@ $font-weight-sm: 400;
 
 *{
     font-size: 14px;
+    padding: 0;
+    margin: 0;
 }
 
 
 // Mobile first
 
-body{
+.wrapper{
     background-color: $bg-main;
     font-family: $font-stack-secondary;
     color: $font-color;
     margin: 2em;
+
+    .slogan{
+        
+        img.illustration-big{
+            margin:0 auto;
+        }
+        h2{
+            margin:2em 0 1em;
+        }
+        p{
+            padding-bottom: 1em;
+        }
+        a{
+            color:aqua;
+        }
+        
+    }
+
+    .testimonials{
+        margin-bottom: 10em;
+        img{max-width: 20px;}
+    
+        .testimonials-container{
+            background-color: $bg-testimonials;
+            margin-bottom: 2em;
+            border-radius: 5px;
+            padding: 2em;
+            line-height: 1.5em;
+            display: flex;
+            flex-direction: column;
+            .circular-square{
+                border-radius: 50%;
+                max-width: 30px;
+            }
+            .client-wrap{
+                margin-top: 1em;
+            }
+            p{
+                font-size: 12px;
+            }
+            .client-name{
+                font-weight: 700;
+            }
+            
+        }
+    }
+    .early-access-container{
+        background-color: $bg-testimonials;
+        text-align: center;
+        border-radius: 10px;
+    }
+
+}
+
+body{
+    background-color: $bg-main;
+    
 }
 
 nav{
@@ -53,10 +112,12 @@ nav{
 
 .hero{
     text-align: center;
-
-   
-
-    
+    .hero-heading{
+        margin-top: 2em ;
+    }
+    .hero-subheading{
+        margin-top: 1.5em;
+    }   
 }
 
 h1{
@@ -105,21 +166,16 @@ h1,h2,h3{
 //slogans
 .slogan{
     margin:7em 0em 10em;
-    a:link{
-        color: $accent-cta;
+    p{
+        margin: 2em o;
     }
 }
 
-.testimonials-container{
-    background-color: $bg-testimonials;
-    z-index: 9999;
-    font-size: .5rem;
-    .circular-square { border-radius: 50%; }
 
-}
 
 .illustration-big{
     width: 90%;
+    margin: 0 auto;
 }
 
 .logo{
