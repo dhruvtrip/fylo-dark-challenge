@@ -1,25 +1,10 @@
+@import 'variables';
+
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
 //Google fonts
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
-
-//Variables - library
-$font-stack-primary: Raleway;
-$font-stack-secondary: Open Sans;
-
-$bg-email: hsl(217, 28%, 15%);
-$bg-main: hsl(218, 28%, 13%);
-$bg-footer: hsl(216, 53%, 9%);
-$bg-testimonials: hsl(219, 30%, 18%);
-
-$font-color: white;
-
-$accent-cta: linear-gradient(90deg, rgba(101,226,217,1) 0%, rgba(51,158,204,1) 100%);
-$accent-error: hsl(0, 100%, 63%);
-
-$font-weight-lg: 700;
-$font-weight-sm: 400;
 
 *{
     font-size: 14px;
@@ -85,13 +70,25 @@ $font-weight-sm: 400;
         background-color: $bg-testimonials;
         text-align: center;
         border-radius: 10px;
+        padding: 2em;
+        h2,p{
+            margin-bottom: 2rem;
+            
+        }
+        input{
+            border-radius: 30px;
+            padding: 1em 5.5em;
+            max-width:auto;
+            margin: 0 auto;
+        }
+    
     }
 
 }
 
 body{
     background-color: $bg-main;
-    
+    margin: 0 auto;
 }
 
 nav{
@@ -136,11 +133,11 @@ h1,h2,h3{
 
 .cta-start{
     padding: 1em 6em;
-    border-radius: $accent-cta;
     font-family: $font-stack-secondary;
     background: $accent-cta;
     color: $font-color;
     margin: 2em;
+    white-space: nowrap;
     border-radius: 30px;
 }
 
@@ -195,6 +192,3 @@ footer{
 }
 
 // desktop
-@media only screen and (min-width: 768px) {
-    
-}
