@@ -12,6 +12,7 @@
   font-size: 14px;
   padding: 0;
   margin: 0;
+  color: white;
 }
 
 .wrapper {
@@ -200,6 +201,8 @@ h1, h2, h3 {
 
 footer {
   background-color: #0b1523;
+  font-family: Open Sans;
+  padding: 2rem;
 }
 
 footer .logo {
@@ -207,13 +210,24 @@ footer .logo {
 }
 
 footer .footer-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  margin: 4em 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[2];
+      grid-template-columns: repeat(2, auto);
+  gap: 1em;
+}
+
+footer .footer-container img {
+  max-width: 100%;
+}
+
+footer ul {
+  list-style-type: none;
+  margin: 3em 0em;
+}
+
+footer ul li {
+  margin: 1em 0;
 }
 /*# sourceMappingURL=style.css.map */
