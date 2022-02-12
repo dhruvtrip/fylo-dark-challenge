@@ -168,6 +168,13 @@ h1, h2, h3 {
 
 .wrapper .testimonials .testimonials-container .client-wrap {
   margin-top: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .wrapper .testimonials .testimonials-container p {

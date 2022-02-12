@@ -144,6 +144,9 @@ h1,h2,h3{
             }
             .client-wrap{
                 margin-top: 1em;
+                display: flex;
+                gap: 1em;
+                align-items:center
             }
             p{
                 font-size: 12px;
