@@ -19,6 +19,19 @@
 body{
     background-color: $bg-main;
     margin: 0 auto;
+    h1{
+        font-size: 1.7rem;
+        font-weight:$font-weight-lg;
+    }
+    
+    h2{
+        font-size: 1.4rem;
+    }
+    
+    
+    h1,h2,h3{
+        font-family: $font-stack-primary;
+    }
 }
 
 
@@ -28,19 +41,7 @@ body{
     margin: 0 auto;
 }
 
-h1{
-    font-size: 1.7rem;
-    font-weight:$font-weight-lg;
-}
 
-h2{
-    font-size: 1.3rem;
-}
-
-
-h1,h2,h3{
-    font-family: $font-stack-primary;
-}
 
 
 .cta-start{
@@ -58,6 +59,8 @@ h1,h2,h3{
     width: 25%;
 }
 .wrapper{
+
+
     background-color: $bg-main;
     font-family: $font-stack-secondary;
     color: $font-color;
@@ -94,11 +97,13 @@ h1,h2,h3{
         text-align: center;
         display: flex;
         flex-direction: column;
+        flex-wrap: wrap;
     
         .feature-container{
             padding: 2em 0em;
             h3{
                 font-size: 1.2rem;
+                margin: 1em 0;
             }
         }
         img{
@@ -224,4 +229,4 @@ footer{
    
 }
 
-// desktop
+

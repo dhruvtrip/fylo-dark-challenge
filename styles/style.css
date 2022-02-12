@@ -20,22 +20,22 @@ body {
   margin: 0 auto;
 }
 
-.illustration-big {
-  width: 90%;
-  margin: 0 auto;
-}
-
-h1 {
+body h1 {
   font-size: 1.7rem;
   font-weight: 700;
 }
 
-h2 {
-  font-size: 1.3rem;
+body h2 {
+  font-size: 1.4rem;
 }
 
-h1, h2, h3 {
+body h1, body h2, body h3 {
   font-family: Raleway;
+}
+
+.illustration-big {
+  width: 90%;
+  margin: 0 auto;
 }
 
 .cta-start {
@@ -104,6 +104,8 @@ h1, h2, h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .wrapper .feature .feature-container {
@@ -112,6 +114,7 @@ h1, h2, h3 {
 
 .wrapper .feature .feature-container h3 {
   font-size: 1.2rem;
+  margin: 1em 0;
 }
 
 .wrapper .feature img {
