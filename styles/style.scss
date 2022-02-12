@@ -19,6 +19,7 @@
 body{
     background-color: $bg-main;
     margin: 0 auto;
+
     h1{
         font-size: 1.7rem;
         font-weight:$font-weight-lg;
@@ -39,6 +40,7 @@ body{
 .illustration-big{
     width: 90%;
     margin: 0 auto;
+    max-width: 500px;
 }
 
 
@@ -57,15 +59,15 @@ body{
 
 .logo{
     width: 25%;
+    max-width: 178px;
 }
 .wrapper{
 
-
+    //max-width: 700px;
     background-color: $bg-main;
     font-family: $font-stack-secondary;
     color: $font-color;
     margin: 2em;
-
 
     nav{
         display: flex;
@@ -74,7 +76,6 @@ body{
         color: $font-color;
         font-family: $font-stack-primary;
         padding-bottom: 2.5em;
-    
         a{
             font-size: .9rem;
             color: $font-color;
@@ -206,7 +207,6 @@ footer{
     background-color: $bg-footer;
     font-family: $font-stack-secondary;
     padding:2rem;
-    //padding-top: 25rem;
     transform: translate(0,-230px);
     .logo{
         width: 50%;
@@ -229,4 +229,17 @@ footer{
    
 }
 
+// display size - iPad Air
 
+@media only screen and (min-width: 768px){
+    body{margin: 4em;}
+    .wrapper{
+        nav{
+            img{
+                margin-right: auto;
+            }
+            justify-content: end;
+            gap: 3em;
+        }
+    }
+}
