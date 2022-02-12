@@ -16,17 +16,103 @@
 
 
 // Mobile first
+body{
+    background-color: $bg-main;
+    margin: 0 auto;
+}
 
+
+
+.illustration-big{
+    width: 90%;
+    margin: 0 auto;
+}
+
+h1{
+    font-size: 1.7rem;
+    font-weight:$font-weight-lg;
+}
+
+h2{
+    font-size: 1.3rem;
+}
+
+
+h1,h2,h3{
+    font-family: $font-stack-primary;
+}
+
+
+.cta-start{
+    padding: 1em 5em;
+    border: 0px;
+    font-family: $font-stack-secondary;
+    background: $accent-cta;
+    color: $font-color;
+    margin: 2em;
+    white-space: nowrap;
+    border-radius: 30px;
+}   
+
+.logo{
+    width: 25%;
+}
 .wrapper{
     background-color: $bg-main;
     font-family: $font-stack-secondary;
     color: $font-color;
     margin: 2em;
 
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: $font-color;
+        font-family: $font-stack-primary;
+        padding-bottom: 2.5em;
+    
+        a{
+            font-size: .9rem;
+            color: $font-color;
+            text-decoration: none;
+        }
+        
+    }
+
+    .hero{
+        text-align: center;
+        .hero-heading{
+            margin-top: 2em ;
+        }
+        .hero-subheading{
+            margin-top: 1.5em;
+        }
+    }
+    .feature{
+        margin: 6em 0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    
+        .feature-container{
+            padding: 2em 0em;
+            h3{
+                font-size: 1.2rem;
+            }
+        }
+        img{
+            width: 20%;
+        }
+    }
     .slogan{
         
-        img.illustration-big{
-            margin:0 auto;
+        // img.illustration-big{
+        //     margin:0 auto;
+        // }
+        margin:7em 0em 10em;
+        p{
+            margin: 2em o;
         }
         h2{
             margin:2em 0 1em;
@@ -73,118 +159,47 @@
         text-align: center;
         border-radius: 10px;
         padding: 2em;
+        
+        //position: absolute;
+        //transform: translate(0,210px);
         h2,p{
             margin-bottom: 2rem;
-            
         }
         input{
             border-radius: 30px;
-            padding: 1em 5.5em;
+            border: 0px;
+            padding: 1rem 4rem;
             max-width:auto;
             margin: 0 auto;
         }
-    
-    }
-
-}
-
-body{
-    background-color: $bg-main;
-    margin: 0 auto;
-}
-
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: $font-color;
-    font-family: $font-stack-primary;
-    padding-bottom: 2.5em;
-
-    a{
-        font-size: .9rem;
-        color: $font-color;
-        text-decoration: none;
-    }
-    
-}
-
-.hero{
-    text-align: center;
-    .hero-heading{
-        margin-top: 2em ;
-    }
-    .hero-subheading{
-        margin-top: 1.5em;
-    }   
-}
-
-h1{
-    font-size: 1.7rem;
-    font-weight:$font-weight-lg;
-}
-
-h2{
-    font-size: 1.3rem;
-}
-
-
-h1,h2,h3{
-    font-family: $font-stack-primary;
-}
-
-.cta-start{
-    padding: 1em 6em;
-    font-family: $font-stack-secondary;
-    background: $accent-cta;
-    color: $font-color;
-    margin: 2em;
-    white-space: nowrap;
-    border-radius: 30px;
-}
-
-//features category
-.feature{
-    margin: 6em 0;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-
-    .feature-container{
-        padding: 2em 0em;
-        h3{
-            font-size: 1.2rem;
+        ::placeholder{
+            color: rgb(200, 200, 200);
+            font-size: 10px;
+            text-align: left;
         }
+        .free{
+            padding: 1em 4em;
+        }
+    
     }
-    img{
-        width: 20%;
-    }
+
+    
+
 }
-
-
-//slogans
-.slogan{
-    margin:7em 0em 10em;
-    p{
-        margin: 2em o;
-    }
+.block{
+    background-color: $bg-footer;
+    height: 250px;
+    width: auto;
+    transform: translate(0,-210px);
+    position: relative;
+    z-index: -1;
 }
-
-
-
-.illustration-big{
-    width: 90%;
-    margin: 0 auto;
-}
-
-.logo{
-    width: 25%;
-}
-
 footer{
     background-color: $bg-footer;
     font-family: $font-stack-secondary;
     padding:2rem;
+    //padding-top: 25rem;
+    transform: translate(0,-230px);
     .logo{
         width: 50%;
     }

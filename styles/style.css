@@ -15,6 +15,45 @@
   color: white;
 }
 
+body {
+  background-color: #181f2a;
+  margin: 0 auto;
+}
+
+.illustration-big {
+  width: 90%;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.3rem;
+}
+
+h1, h2, h3 {
+  font-family: Raleway;
+}
+
+.cta-start {
+  padding: 1em 5em;
+  border: 0px;
+  font-family: Open Sans;
+  background: -webkit-gradient(linear, left top, right top, from(#65e2d9), to(#339ecc));
+  background: linear-gradient(90deg, #65e2d9 0%, #339ecc 100%);
+  color: white;
+  margin: 2em;
+  white-space: nowrap;
+  border-radius: 30px;
+}
+
+.logo {
+  width: 25%;
+}
+
 .wrapper {
   background-color: #181f2a;
   font-family: Open Sans;
@@ -22,8 +61,69 @@
   margin: 2em;
 }
 
-.wrapper .slogan img.illustration-big {
-  margin: 0 auto;
+.wrapper nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  font-family: Raleway;
+  padding-bottom: 2.5em;
+}
+
+.wrapper nav a {
+  font-size: .9rem;
+  color: white;
+  text-decoration: none;
+}
+
+.wrapper .hero {
+  text-align: center;
+}
+
+.wrapper .hero .hero-heading {
+  margin-top: 2em;
+}
+
+.wrapper .hero .hero-subheading {
+  margin-top: 1.5em;
+}
+
+.wrapper .feature {
+  margin: 6em 0;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wrapper .feature .feature-container {
+  padding: 2em 0em;
+}
+
+.wrapper .feature .feature-container h3 {
+  font-size: 1.2rem;
+}
+
+.wrapper .feature img {
+  width: 20%;
+}
+
+.wrapper .slogan {
+  margin: 7em 0em 10em;
+}
+
+.wrapper .slogan p {
+  margin: 2em o;
 }
 
 .wrapper .slogan h2 {
@@ -91,118 +191,56 @@
 
 .wrapper .early-access-container input {
   border-radius: 30px;
-  padding: 1em 5.5em;
+  border: 0px;
+  padding: 1rem 4rem;
   max-width: auto;
   margin: 0 auto;
 }
 
-body {
-  background-color: #181f2a;
-  margin: 0 auto;
+.wrapper .early-access-container ::-webkit-input-placeholder {
+  color: #c8c8c8;
+  font-size: 10px;
+  text-align: left;
 }
 
-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: white;
-  font-family: Raleway;
-  padding-bottom: 2.5em;
+.wrapper .early-access-container :-ms-input-placeholder {
+  color: #c8c8c8;
+  font-size: 10px;
+  text-align: left;
 }
 
-nav a {
-  font-size: .9rem;
-  color: white;
-  text-decoration: none;
+.wrapper .early-access-container ::-ms-input-placeholder {
+  color: #c8c8c8;
+  font-size: 10px;
+  text-align: left;
 }
 
-.hero {
-  text-align: center;
+.wrapper .early-access-container ::placeholder {
+  color: #c8c8c8;
+  font-size: 10px;
+  text-align: left;
 }
 
-.hero .hero-heading {
-  margin-top: 2em;
+.wrapper .early-access-container .free {
+  padding: 1em 4em;
 }
 
-.hero .hero-subheading {
-  margin-top: 1.5em;
-}
-
-h1 {
-  font-size: 1.7rem;
-  font-weight: 700;
-}
-
-h2 {
-  font-size: 1.3rem;
-}
-
-h1, h2, h3 {
-  font-family: Raleway;
-}
-
-.cta-start {
-  padding: 1em 6em;
-  font-family: Open Sans;
-  background: -webkit-gradient(linear, left top, right top, from(#65e2d9), to(#339ecc));
-  background: linear-gradient(90deg, #65e2d9 0%, #339ecc 100%);
-  color: white;
-  margin: 2em;
-  white-space: nowrap;
-  border-radius: 30px;
-}
-
-.feature {
-  margin: 6em 0;
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.feature .feature-container {
-  padding: 2em 0em;
-}
-
-.feature .feature-container h3 {
-  font-size: 1.2rem;
-}
-
-.feature img {
-  width: 20%;
-}
-
-.slogan {
-  margin: 7em 0em 10em;
-}
-
-.slogan p {
-  margin: 2em o;
-}
-
-.illustration-big {
-  width: 90%;
-  margin: 0 auto;
-}
-
-.logo {
-  width: 25%;
+.block {
+  background-color: #0b1523;
+  height: 250px;
+  width: auto;
+  -webkit-transform: translate(0, -210px);
+          transform: translate(0, -210px);
+  position: relative;
+  z-index: -1;
 }
 
 footer {
   background-color: #0b1523;
   font-family: Open Sans;
   padding: 2rem;
+  -webkit-transform: translate(0, -230px);
+          transform: translate(0, -230px);
 }
 
 footer .logo {
