@@ -85,12 +85,16 @@ body{
     }
 
     .hero{
+        max-width: 600px;
         text-align: center;
+        margin: 0 auto;
         .hero-heading{
             margin-top: 2em ;
         }
         .hero-subheading{
-            margin-top: 1.5em;
+            //margin-top: 1.5em;
+            max-width: 520px;
+            margin: 1.5em auto 0 auto;
         }
     }
     .feature{
@@ -195,6 +199,8 @@ body{
     
 
 }
+
+//colour block behind the early-access-container
 .block{
     background-color: $bg-footer;
     height: 250px;
@@ -203,6 +209,8 @@ body{
     position: relative;
     z-index: -1;
 }
+
+//contact details + links
 footer{
     background-color: $bg-footer;
     font-family: $font-stack-secondary;
@@ -231,15 +239,26 @@ footer{
 
 // display size - iPad Air
 
-@media only screen and (min-width: 768px){
-    body{margin: 4em;}
+@media only screen and (min-width: 600px){
+   
     .wrapper{
+        
         nav{
             img{
                 margin-right: auto;
             }
             justify-content: end;
             gap: 3em;
+        }
+
+        .hero{
+            h1{
+                font-size: 2.5rem;
+            }
+            p{
+                font-size: 1.2rem;
+            }
+            margin: 0 auto; 
         }
     }
 }

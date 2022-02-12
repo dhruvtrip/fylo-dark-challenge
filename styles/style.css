@@ -85,7 +85,9 @@ body h1, body h2, body h3 {
 }
 
 .wrapper .hero {
+  max-width: 600px;
   text-align: center;
+  margin: 0 auto;
 }
 
 .wrapper .hero .hero-heading {
@@ -93,7 +95,8 @@ body h1, body h2, body h3 {
 }
 
 .wrapper .hero .hero-subheading {
-  margin-top: 1.5em;
+  max-width: 520px;
+  margin: 1.5em auto 0 auto;
 }
 
 .wrapper .feature {
@@ -281,10 +284,7 @@ footer ul li {
   margin: 1em 0;
 }
 
-@media only screen and (min-width: 768px) {
-  body {
-    margin: 4em;
-  }
+@media only screen and (min-width: 600px) {
   .wrapper nav {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
@@ -293,6 +293,15 @@ footer ul li {
   }
   .wrapper nav img {
     margin-right: auto;
+  }
+  .wrapper .hero {
+    margin: 0 auto;
+  }
+  .wrapper .hero h1 {
+    font-size: 2.5rem;
+  }
+  .wrapper .hero p {
+    font-size: 1.2rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
