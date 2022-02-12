@@ -53,7 +53,7 @@ body h1, body h2, body h3 {
 
 .logo {
   width: 25%;
-  max-width: 178px;
+  max-width: 158px;
 }
 
 .wrapper {
@@ -115,6 +115,11 @@ body h1, body h2, body h3 {
 
 .wrapper .feature .feature-container {
   padding: 2em 0em;
+  max-width: 300px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
 }
 
 .wrapper .feature .feature-container h3 {
@@ -127,7 +132,14 @@ body h1, body h2, body h3 {
 }
 
 .wrapper .slogan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin: 7em 0em 10em;
+}
+
+.wrapper .slogan .illustration-big {
+  max-width: 400px;
 }
 
 .wrapper .slogan p {
@@ -302,6 +314,12 @@ footer ul li {
   }
   .wrapper .hero p {
     font-size: 1.2rem;
+  }
+  .wrapper .feature {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 /*# sourceMappingURL=style.css.map */
