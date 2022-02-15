@@ -35,7 +35,6 @@ body h1, body h2, body h3 {
 
 .illustration-big {
   width: 90%;
-  margin: 0 auto;
   max-width: 500px;
 }
 
@@ -144,21 +143,26 @@ body h1, body h2, body h3 {
 
 .wrapper .slogan .illustration-big {
   max-width: 400px;
+  margin: 0 auto;
 }
 
-.wrapper .slogan p {
+.wrapper .slogan .slogan-text {
+  max-width: 480px;
+}
+
+.wrapper .slogan .slogan-text p {
   margin: 2em o;
 }
 
-.wrapper .slogan h2 {
+.wrapper .slogan .slogan-text h2 {
   margin: 2em 0 1em;
 }
 
-.wrapper .slogan p {
+.wrapper .slogan .slogan-text p {
   padding-bottom: 1em;
 }
 
-.wrapper .slogan a {
+.wrapper .slogan .slogan-text a {
   color: aqua;
 }
 
@@ -345,9 +349,17 @@ footer ul li {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    gap: 3rem;
+  }
+  .wrapper .slogan .illustration-big {
+    margin: 0;
   }
   .wrapper .testimonials {
     -webkit-box-orient: horizontal;
@@ -361,6 +373,15 @@ footer ul li {
   }
   .wrapper .quotes {
     max-width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .wrapper .slogan {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 3rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

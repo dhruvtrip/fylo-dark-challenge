@@ -39,7 +39,7 @@ body{
 
 .illustration-big{
     width: 90%;
-    margin: 0 auto;
+    //margin: 0 auto;
     max-width: 500px;
 }
 
@@ -134,24 +134,26 @@ body{
     .slogan{
         display: flex;
         flex-direction: column;
+        margin:7em 0em 10em;
         .illustration-big{
             max-width: 400px;
-            
+            margin: 0 auto;
         }
-        margin:7em 0em 10em;
-        p{
-            margin: 2em o;
+        .slogan-text{
+            max-width: 480px;
+            p{
+                margin: 2em o;
+            }
+            h2{
+                margin:2em 0 1em;
+            }
+            p{
+                padding-bottom: 1em;
+            }
+            a{
+                color:aqua;
+            }
         }
-        h2{
-            margin:2em 0 1em;
-        }
-        p{
-            padding-bottom: 1em;
-        }
-        a{
-            color:aqua;
-        }
-
         
     }
     .quotes{max-width: 20px;}
@@ -293,8 +295,13 @@ footer{
         }
 
         .slogan{
-        display: flex;
-        justify-content: center;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 3rem;
+            .illustration-big{
+                margin: 0;
+            }
         }
         // .quotes{
         //     transform: translate(235px,-25px); 
@@ -315,4 +322,14 @@ footer{
     }
 
 
+}
+
+//desktop
+@media only screen and (min-width: 1024px){
+    .wrapper{
+        .slogan{
+            justify-content: center;
+            gap: 3rem;
+        }
+    }
 }
