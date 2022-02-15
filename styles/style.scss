@@ -132,9 +132,11 @@ body{
         }
     }
     .slogan{
+        display: flex;
+        flex-direction: column;
         .illustration-big{
-            //margin:0 auto;
             max-width: 400px;
+            
         }
         margin:7em 0em 10em;
         p{
