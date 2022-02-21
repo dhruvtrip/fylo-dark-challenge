@@ -330,4 +330,27 @@ footer{
             gap: 3rem;
         }
     }
+
+    footer{
+
+        .footer-parent{
+            display: flex;
+            justify-content: space-around;
+            .footer-container{
+                flex: 4 auto;
+                display: grid;
+                grid-template-columns: 20px 300px 20px 120px;
+                grid-template-rows: 30px 90px;
+                .email-icon{
+                    grid-column: 3/4;
+                    grid-row: 2/2;
+                }
+                .email-id{
+                    grid-column: 4/4;
+                    grid-row: 2/2;
+                }
+            }
+        }
+    }
+    
 }
