@@ -1,4 +1,4 @@
-@import 'variables';
+@import '_variables';
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
@@ -39,7 +39,6 @@ body{
 
 .illustration-big{
     width: 90%;
-    //margin: 0 auto;
     max-width: 500px;
 }
 
@@ -193,56 +192,49 @@ body{
             
         }
     }
-    .early-access-container{
-        margin: 0 auto;
-        background-color: $bg-testimonials;
-        text-align: center;
-        border-radius: 10px;
-        padding: 2em;
-        max-width: 680px;
-        //position: absolute;
-        //transform: translate(0,210px);
-        h2,p{
-            margin-bottom: 2rem;
-        }
-        input{
-            border-radius: 30px;
-            border: 0px;
-            padding: 1rem 4rem;
-            max-width:auto;
+
+    
+    .parent-early-access-container{
+        position: relative;
+        .early-access-container{
+            position: absolute;
             margin: 0 auto;
+            background-color: $bg-testimonials;
+            text-align: center;
+            border-radius: 10px;
+            padding: 2em;
+            max-width: 680px;
+            h2,p{
+                margin-bottom: 2rem;
+            }
+            input{
+                border-radius: 30px;
+                border: 0px;
+                padding: 1rem 4rem;
+                max-width:auto;
+                margin: 0 auto;
+            }
+            ::placeholder{
+                color: rgb(200, 200, 200);
+                font-size: 10px;
+                text-align: left;
+            }
+            .free{
+                padding: 1em 4em;
+            }
+        
         }
-        ::placeholder{
-            color: rgb(200, 200, 200);
-            font-size: 10px;
-            text-align: left;
-        }
-        .free{
-            padding: 1em 4em;
-        }
-    
     }
-
     
 
 }
 
-//colour block behind the early-access-container
-.block{
-    background-color: $bg-footer;
-    height: 250px;
-    width: auto;
-    transform: translate(0,-210px);
-    position: relative;
-    z-index: -1;
-}
 
 //contact details + links
 footer{
     background-color: $bg-footer;
     font-family: $font-stack-secondary;
     padding:2rem;
-    transform: translate(0,-230px); //moved up
     .logo{
         width: 50%;
     }
@@ -270,6 +262,7 @@ footer{
 @media only screen and (min-width: 656px){
    
     .wrapper{
+        
         nav{
             img{
                 margin-right: auto;
@@ -303,11 +296,7 @@ footer{
                 margin: 0;
             }
         }
-        // .quotes{
-        //     transform: translate(235px,-25px); 
-        //     position: fixed;
-        //     //z-index: -1;
-        // }
+    
         .testimonials{
             flex-direction: row;
             gap: 2em;
