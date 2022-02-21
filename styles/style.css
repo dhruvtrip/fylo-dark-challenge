@@ -171,7 +171,7 @@ body h1, body h2, body h3 {
 }
 
 .wrapper .testimonials {
-  margin-bottom:0em;
+  margin-bottom: 15em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -224,20 +224,26 @@ body h1, body h2, body h3 {
   font-weight: 700;
 }
 
-.wrapper .early-access-container {
+.wrapper .parent-early-access-container {
+  position: relative;
+}
+
+.wrapper .parent-early-access-container .early-access-container {
+  position: absolute;
   margin: 0 auto;
   background-color: #202a3c;
   text-align: center;
   border-radius: 10px;
   padding: 2em;
   max-width: 680px;
+  top: -12rem;
 }
 
-.wrapper .early-access-container h2, .wrapper .early-access-container p {
+.wrapper .parent-early-access-container .early-access-container h2, .wrapper .parent-early-access-container .early-access-container p {
   margin-bottom: 2rem;
 }
 
-.wrapper .early-access-container input {
+.wrapper .parent-early-access-container .early-access-container input {
   border-radius: 30px;
   border: 0px;
   padding: 1rem 4rem;
@@ -245,40 +251,45 @@ body h1, body h2, body h3 {
   margin: 0 auto;
 }
 
-.wrapper .early-access-container ::-webkit-input-placeholder {
+.wrapper .parent-early-access-container .early-access-container ::-webkit-input-placeholder {
   color: #c8c8c8;
   font-size: 10px;
   text-align: left;
 }
 
-.wrapper .early-access-container :-ms-input-placeholder {
+.wrapper .parent-early-access-container .early-access-container :-ms-input-placeholder {
   color: #c8c8c8;
   font-size: 10px;
   text-align: left;
 }
 
-.wrapper .early-access-container ::-ms-input-placeholder {
+.wrapper .parent-early-access-container .early-access-container ::-ms-input-placeholder {
   color: #c8c8c8;
   font-size: 10px;
   text-align: left;
 }
 
-.wrapper .early-access-container ::placeholder {
+.wrapper .parent-early-access-container .early-access-container ::placeholder {
   color: #c8c8c8;
   font-size: 10px;
   text-align: left;
 }
 
-.wrapper .early-access-container .free {
-  padding: 1em 4em;
+.wrapper .parent-early-access-container .early-access-container .free {
+  padding: 1em 4rem;
+  border: 0px;
+  font-family: Open Sans;
+  background: -webkit-gradient(linear, left top, right top, from(#65e2d9), to(#339ecc));
+  background: linear-gradient(90deg, #65e2d9 0%, #339ecc 100%);
+  color: white;
+  white-space: nowrap;
+  border-radius: 30px;
 }
-
 
 footer {
   background-color: #0b1523;
   font-family: Open Sans;
-  padding: 20rem 2rem 2rem 2rem;
-  
+  padding: 14rem 2rem 2rem 2rem;
 }
 
 footer .logo {
@@ -290,7 +301,7 @@ footer .footer-container {
   max-width: 319px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (auto)[];
+  -ms-grid-columns: (auto)[2];
       grid-template-columns: repeat(2, auto);
   gap: 1em;
 }
