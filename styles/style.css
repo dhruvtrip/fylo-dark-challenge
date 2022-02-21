@@ -171,7 +171,7 @@ body h1, body h2, body h3 {
 }
 
 .wrapper .testimonials {
-  margin-bottom: 10em;
+  margin-bottom:0em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -273,22 +273,12 @@ body h1, body h2, body h3 {
   padding: 1em 4em;
 }
 
-.block {
-  background-color: #0b1523;
-  height: 250px;
-  width: auto;
-  -webkit-transform: translate(0, -210px);
-          transform: translate(0, -210px);
-  position: relative;
-  z-index: -1;
-}
 
 footer {
   background-color: #0b1523;
   font-family: Open Sans;
-  padding: 2rem;
-  -webkit-transform: translate(0, -230px);
-          transform: translate(0, -230px);
+  padding: 20rem 2rem 2rem 2rem;
+  
 }
 
 footer .logo {
@@ -300,7 +290,7 @@ footer .footer-container {
   max-width: 319px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (auto)[2];
+  -ms-grid-columns: (auto)[];
       grid-template-columns: repeat(2, auto);
   gap: 1em;
 }
