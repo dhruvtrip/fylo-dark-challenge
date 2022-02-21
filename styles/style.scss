@@ -211,7 +211,7 @@ body{
             input{
                 border-radius: 30px;
                 border: 0px;
-                padding: 1rem 4rem;
+                padding: 1rem 3.5rem;
                 max-width:auto;
                 margin: 0 auto;
             }
@@ -227,7 +227,7 @@ body{
                 font-family: $font-stack-secondary;
                 background: $accent-cta;
                 color: $font-color;
-                //margin: 2em;
+                margin-top: 1em;
                 white-space: nowrap;
                 border-radius: 30px;
             }

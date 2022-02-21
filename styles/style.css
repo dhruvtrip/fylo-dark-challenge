@@ -246,7 +246,7 @@ body h1, body h2, body h3 {
 .wrapper .parent-early-access-container .early-access-container input {
   border-radius: 30px;
   border: 0px;
-  padding: 1rem 4rem;
+  padding: 1rem 3.5rem;
   max-width: auto;
   margin: 0 auto;
 }
@@ -282,6 +282,7 @@ body h1, body h2, body h3 {
   background: -webkit-gradient(linear, left top, right top, from(#65e2d9), to(#339ecc));
   background: linear-gradient(90deg, #65e2d9 0%, #339ecc 100%);
   color: white;
+  margin-top: 1em;
   white-space: nowrap;
   border-radius: 30px;
 }
