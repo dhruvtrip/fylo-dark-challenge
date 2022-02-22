@@ -1,5 +1,8 @@
 # fylo-dark-challenge
 
+![Desktop HD](https://user-images.githubusercontent.com/16800201/155210669-51739b80-e6a3-45a8-84ed-099d6cffbb18.png)
+
+
 # Table of contents
 * [General info](#general-info)
 * [Technologies](#technologies)
@@ -7,7 +10,7 @@
 * [Setup](#setup)
 
 # General info
-As the name suggests, I did this as a [Frontend Mentor](https://www.frontendmentor.io/challenges) challenge. I personally believe the best way to practice your web development skills is to practice with projects and challenges. This design has some nice layout challenges in it. A perfect training ground to practice your Flexbox and Grid skills.
+As the name suggests, I did this as a [Frontend Mentor](https://www.frontendmentor.io/challenges) challenge. I personally believe the best way to practice your web development skills is to practice with projects and challenges. This design has some nice layout challenges in it. A perfect training ground to practice your Flexbox and Grid skills. Since this is a fully responsive development challenge, I also made use of media queries. I added breakpoints at the phone, tablet (additionally added -- not part of the challenge) and desktop sizes.
 
 This gave me the opportunity to replicate designs just from a picture. It is a great way to work independently, in case we don't work with exact specifications or designs.
 
@@ -97,4 +100,3 @@ If you use the [Homebrew](https://brew.sh/) package manager for Mac OS X or Linu
 $ brew install sass/sass/sass
 ```
 Once you are done, you can download the [Live SASS Compiler](https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass) extension in VSCode to watch your SCSS files (converting them to CSS).
-
