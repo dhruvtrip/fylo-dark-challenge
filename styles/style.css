@@ -226,6 +226,8 @@ body h1, body h2, body h3 {
 
 .wrapper .parent-early-access-container {
   position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 .wrapper .parent-early-access-container .early-access-container {
